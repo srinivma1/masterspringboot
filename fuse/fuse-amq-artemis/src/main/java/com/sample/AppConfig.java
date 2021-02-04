@@ -12,7 +12,7 @@ public class AppConfig {
     public JmsComponent jmsComponent() throws Exception {
         // Create the connectionfactory which will be used to connect to Artemis
         ActiveMQConnectionFactory cf = new ActiveMQConnectionFactory();
-        cf.setBrokerURL("tcp://localhost:61616");
+        cf.setBrokerURL("tcp://ex-aao-hdls-svc.amq-demo.svc:61616");
     
 
         // Create the Camel JMS component and wire it to our Artemis connectionfactory
