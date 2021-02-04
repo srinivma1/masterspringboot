@@ -13,8 +13,7 @@ public class AppConfig {
         // Create the connectionfactory which will be used to connect to Artemis
         ActiveMQConnectionFactory cf = new ActiveMQConnectionFactory();
         cf.setBrokerURL("tcp://localhost:61616");
-        cf.setUser("admin");
-        cf.setPassword("admin");
+    
 
         // Create the Camel JMS component and wire it to our Artemis connectionfactory
         JmsComponent jms = new JmsComponent();
